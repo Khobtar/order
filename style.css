@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+label {
+    cursor: pointer;
+}
+input [type=checkbox] {
+    display: none;
+}
+.header {
+    height: 110px;
+display: flex;
+
+align-items: center;
+justify-content: center;
+
+background: #FFFFFF;
+}
+.head {
+    font-family: 'Oswald';
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 53px;
+text-align: center;
+text-transform: uppercase;
+
+
+color: #000000;
+}
+.main {
+height: 681px;
+background: #817070;
+
+}
+.input_fields{
+    padding-top: 86px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+ .inputs {
+    width: 300px;
+    height: 55px;
+    background: #817070;
+    border: 3px solid #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }  
+ .betweenInputs {
+     width: 64px;
+ }
+.inputs > input {
+    width: 130px;
+height: 30px;
+
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+border: none;
+text-align: center;
+background-color: #817070;
+color:#ffffff;
+outline: none;
+
+}
+
+.inputs > input::placeholder{
+    background-color: #817070;
+    color:#ffffff;
+}
+.coffee_field {
+    display: flex;
+    justify-content: center;
+}
+.coffee_field_inputs {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 17px;
+}
+label {
+    width: 95px;
+height: 30px;
+
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+text-align: center;
+
+color: #FFFFFF;
+}
+.order_field {
+padding-top: 84px;
+display: flex;
+justify-content: center;
+}
+.coffee_field_checkboxes {
+    padding-top: 12px;
+}
+.checkbox {
+    margin-bottom: 42px;
+
+}
+.checkbox:checked {
+    background-color: #a58b8b;
+}
+.checkbox > input {
+    width: 21px;
+height: 23px;
+background: #C4C4C4;
+margin-right: 16px;
+display: none;
+}
+/* .checkbox  */
+label:before{
+    content: "";
+    display: inline-block;
+    width: 21px;
+    height: 23px;
+    background: #817070;
+    margin-right: 16px;
+    border: 4px solid #C4C4C4;
+}
+input[type=checkbox]:checked + label:before{
+    content: "";
+    display: inline-block;
+    width: 21px;
+    height: 23px;
+    background: #493e3e;
+    margin-right: 16px;
+}
+
+/* .checkbox > */
+ 
+.coffee_input {
+    width: 130px;
+    height: 55px;
+    background: #817070;
+    border: 3px solid #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 17px;
+}
+.coffee_input > input{
+    background-color: #817070;
+    color:#ffffff;
+    outline: none;
+    border: none;
+    width: 48.1px;
+height: 30px;
+margin: 0;
+padding: 0;
+text-align: center;
+}
+
+.between_main {
+    width: 132px;
+}
+.sum_box {
+    display: flex;
+    justify-content: center;
+}
+.sum {
+    width: 122px;
+height: 30px;
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+text-align: center;
+
+color: #FFFFFF;
+}
+.btn_container {
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;   
+}
+.btn_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+height: 55px;
+
+background: #FFFFFF;
+border: 3px solid #FFFFFF;
+}
+.btn {
+    width: 149px;
+height: 30px;
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+text-align: center;
+text-transform: uppercase;
+background-color: #ffffff;
+border: none;
+color: #817070;
+cursor: pointer;
+}
+.btn_box:hover{
+    background: #817070;
+}
+
+.btn_box:hover > .btn{
+    background: #817070;
+    color:#ffffff;
+}
+
+@media(max-width:686px){
+    
+    .main{
+        height: auto;
+    }
+    .checkbox >label {
+        font-size: 15px;
+    }
+    .coffee_input{
+        width: 75px;
+    }
+.betweenInputs {
+    display: none;
+}
+.order_field{
+    display: block;
+   
+}
+.coffee_field_inputs{
+    padding-left: 0px ;
+
+}
+    
+
+}

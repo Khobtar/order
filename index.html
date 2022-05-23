@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Order</title>
+</head>
+<body>
+    <div class="container">
+    <header>
+<div class="header">
+    <p class="head">coffee house</p>
+</div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="input_fields">
+                <div class="inputs">
+                    <input type="text" placeholder="Введите Фамилию" class="surname">
+                </div>
+                <div class="betweenInputs"></div>
+                <div class="inputs">
+                    <input type="text" placeholder="Введите Имя" class="name">
+                </div> 
+            </div>
+            <div class="order_field">
+                <div class="coffee_field">
+<div class="coffee_field_checkboxes">
+<div class="checkbox">
+
+    <input type="checkbox" name="coffee" value="80" id="Espresso">
+<label for="Espresso">Эспрессо 80р.</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" name="coffee" value="110" id="Latte">
+<label for="Latte">Латте 110р.</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" name="coffee" value="120" id="Cappucino">
+<label for="Cappucino">Капучино 120р.</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" name="coffee" value="90" id="Americano">
+<label for="Americano">Американо 90р.</label>
+</div>
+</div>
+<div class="coffee_field_inputs">
+<div class="coffee_input">
+<input type="text" placeholder="0" value="0" name="coffeeInput" id="Espresso1">
+</div>
+<div class="coffee_input">
+    <input type="text" placeholder="0" value="0" name="coffeeInput" id="Latte1">
+    </div> 
+<div class="coffee_input">
+        <input type="text" placeholder="0" value="0" name="coffeeInput" id="Cappucino1">
+        </div> 
+<div class="coffee_input">
+            <input type="text" placeholder="0" value="0" name="coffeeInput" id="Americano1">
+            </div>
+</div>
+                </div>
+                <div class="between_main">
+
+                </div>
+                <div class="coffee_field">
+<div class="coffee_field_checkboxes">
+
+    <div class="checkbox">
+
+        <input type="checkbox" name="coffee" value="80" id="Chocolate">
+    <label for="Chocolate">Шоколадный кекс 80р.</label>
+    </div>
+    <div class="checkbox">
+    <input type="checkbox" name="coffee" value="110" id="Blueberry">
+    <label for="Blueberry">Черничный кекс 110р.</label>
+    </div>
+    <div class="checkbox">
+    <input type="checkbox" name="coffee" value="120" id="Apple">
+    <label for="Apple">Яблочный тарт 120р.</label>
+    </div>
+</div>
+<div class="coffee_field_inputs">
+    <div class="coffee_input">
+    <input type="text" placeholder="0" value="0" id="Chocolate1" name="coffeeInput">
+    </div>
+    <div class="coffee_input">
+        <input type="text" placeholder="0" value="0" id="Blueberry1" name="coffeeInput">
+        </div> 
+    <div class="coffee_input">
+            <input type="text" placeholder="0" value="0" id="Apple1" name="coffeeInput">
+            </div> 
+</div>
+                </div>
+            </div>
+            <div class="sum_box">
+
+                <p class="sum">Итого: <span class="result">0 руб.</span></p>
+            </div>
+            <div class="btn_container">
+
+                <div class="btn_box">
+                    
+                    <input type="button" value="Оформить заказ" class="btn">
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<script src="/main.js"></script>
+</body>
+</html>
